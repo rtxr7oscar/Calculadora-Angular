@@ -15,6 +15,7 @@ export class HomePage {
   waitingForSecondNumber : boolean = false;
   operation : String='';
 
+
   constructor() {}
 
   clear(){
@@ -29,6 +30,7 @@ export class HomePage {
     if(this.displayValue === '0' || this.waitingForSecondNumber){
 
       this.displayValue= num;
+
       this.waitingForSecondNumber=false;
     }
     else{
@@ -51,6 +53,7 @@ export class HomePage {
 pressBack(){
   if(this.displayValue.length===1 || this.displayValue==='0'){
     this.displayValue='0';
+    this.operation = '';
   }else{
   this.displayValue = this.displayValue.slice(0, -1)
   }

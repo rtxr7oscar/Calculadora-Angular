@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true">
+<div class="app-container">
+  <div class="Calculadora-Titulo">Calculadora</div>
+
+  <div class="calculator-container">
+    <!-- Pantalla/Display -->
+    <div class="display">
+      <div class="display-operation">{{operation}}</div>
+      <div class="display-text">{{displayValue}}</div>
+    </div>
+
+    <!-- Teclado -->
+    <div class="keyboard">
+      <div class="button-row">
+
+        <ion-button class="numero" (click) = "pressNumber('7')">7</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('8')">8</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('9')">9</ion-button>
+        <ion-button class="operador" (click) = "pressOperator('/')">÷</ion-button>
+      
+      </div>
+      <div class="button-row">
+
+        <ion-button class="numero" (click) = "pressNumber('4')">4</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('5')">5</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('6')">6</ion-button>
+        <ion-button class="operador" (click) = "pressOperator('x')">x</ion-button>
+      
+      </div>
+      <div class="button-row">
+
+        <ion-button class="numero" (click) = "pressNumber('1')">1</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('2')">2</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('3')">3</ion-button>
+        <ion-button class="operador" (click) = "pressOperator('-')">-</ion-button>
+      
+      </div>
+      <div class="button-row">
+
+        <ion-button class="numero" (click) = "pressNumber('0')">0</ion-button>
+        <ion-button class="numero" (click) = "pressNumber('.')">.</ion-button>
+        <ion-button class="accion" (click) = "pressEqual()">=</ion-button>
+        <ion-button class="operador" (click) = "pressOperator('+')">+</ion-button>
+      
+      </div> 
+      <div class="button-row">
+
+        <ion-button class="accion" (click)="clear()">C</ion-button>
+        <ion-button class="accion"(click)= "pressBack()">←</ion-button>
+      
+      </div>    
+    </div>
+    
+  </div>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "CalculadoraDisplay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

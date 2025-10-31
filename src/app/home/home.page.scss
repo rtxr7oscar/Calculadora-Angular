@@ -6,68 +6,69 @@ ion-content {
   --padding-bottom: 0;
 }
 
-  ion-content::part(scroll) {
+ion-content::part(scroll) {
   display: flex;
-  justify-content: center;    // Centra horizontalmente
+  justify-content: center; // Centra horizontalmente
   align-items: center;
-  }
+}
 
 .calculator-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
   background: #000;
-  max-width: 500px;           
-  width: 100%;                 // Cambiado a 90% para que se vea el margen
-  height: 600px;              // Altura fija en lugar de 100%
-  border-radius: 20px; 
-  overflow: hidden;       // Opcional pero se ve bien
-  box-shadow: 0 10px 50px rgba(255,255,255,0.1); 
+  max-width: 500px;
+  width: 100%; // Cambiado a 90% para que se vea el margen
+  height: 600px; // Altura fija en lugar de 100%
+  border-radius: 20px;
+  overflow: hidden; // Opcional pero se ve bien
+  box-shadow: 0 10px 50px rgba(255, 255, 255, 0.1);
 }
 
 .display {
-  background: #1c1c1c;      // Gris oscuro
-  padding: 20px;            // Espacio interno
-  margin-bottom: 20px;      // Espacio ABAJO (separa del teclado)
-  border-radius: 10px;      // Esquinas redondeadas
-  min-height: 80px;         // Altura mínima de 80px
+  background: #1c1c1c; // Gris oscuro
+  padding: 20px; // Espacio interno
+  margin-bottom: 20px; // Espacio ABAJO (separa del teclado)
+  border-radius: 10px; // Esquinas redondeadas
+  min-height: 80px; // Altura mínima de 80px
 }
 
-.display-operation{
+.display-operation {
   font-size: 1rem;
   text-align: right;
-  color : #888;
+  color: #888;
   min-height: 24px;
   margin-bottom: 8px;
 }
 
 .display-text {
-  font-size: 2.5rem;        // Texto GRANDE
-  text-align: right;        // Alineado a la DERECHA
-  font-weight: bold;        // En NEGRITA
-  color: white;             // Color BLANCO
+  font-size: 2.5rem; // Texto GRANDE
+  text-align: right; // Alineado a la DERECHA
+  font-weight: bold; // En NEGRITA
+  color: white; // Color BLANCO
 }
 
 .keyboard {
-  flex: 1;                  // "Ocupa TODO el espacio que quede"
-  display: flex;            // Modo organizador
-  flex-direction: column;   // Organiza en COLUMNA
-  gap: 8px;               // Espacio de 10px entre filas
+  flex: 1; // "Ocupa TODO el espacio que quede"
+  display: flex; // Modo organizador
+  flex-direction: column; // Organiza en COLUMNA
+  gap: 8px; // Espacio de 10px entre filas
   overflow: hidden;
 }
 
 .button-row {
-  display: flex;            // Organizador activado
-  gap: 8px;               // Espacio entre botones
-  flex: 1;                 // Cada fila ocupa igual espacio
+  display: flex; // Organizador activado
+  gap: 8px; // Espacio entre botones
+  flex: 1; // Cada fila ocupa igual espacio
 }
 
 ion-button {
-  flex: 1;                  // Todos del mismo tamaño
-  height: 100%;             // Ocupa todo el alto
-  margin: 0;                // Sin márgenes externos
-  font-size: 1.5rem;        // Texto tamaño 1.5
+  flex: 1; // Todos del mismo tamaño
+  height: 100%; // Ocupa todo el alto
+  margin: 0; // Sin márgenes externos
+  font-size: 1.5rem; // Texto tamaño 1.5
 }
+
 ion-button.numero {
   --background: #505050;
   --background-hover: #404040;
@@ -78,24 +79,24 @@ ion-button.operador {
   --background: #ff9500;
   --background-hover: #ff8000;
   --color: white;
-  
+
 }
 
 ion-button.accion {
-  --background: #d4d4d2;
+  --background: #34c759;
   --background-hover: #c4c4c2;
-  --color: #000;
+  --color: white;
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;                  // Espacio entre título y calculadora
+  gap: 100px; // Espacio entre título y calculadora
   padding: 20px 0;
 }
 
-.Calculadora-Titulo{
+.Calculadora-Titulo {
   color: white;
   font-size: 3rem;
   margin: 0;
